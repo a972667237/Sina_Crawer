@@ -6,15 +6,8 @@ import time
 import json
 import random
 from saveToSQL import sqliteSave
+from models import HotData
 
-class HotData:
-    def __init__(self, title, description, discuss, scheme):
-        self.TITLE = title
-        self.DESCRIPTION = description
-        self.DISCUSS = discuss
-        self.SCHEME = scheme
-    def __str__(self):
-        return self.title
 
 class HotCrawer:
     def __init__(self):
